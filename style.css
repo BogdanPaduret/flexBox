@@ -1,0 +1,260 @@
+/* main */
+img  {
+    display: block;
+    margin: 0px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    margin: 0px;
+}
+p {
+    text-align: center;
+    margin: 0px;
+}
+
+hr{
+    border: 1px solid rgb(230, 230, 230);
+    width: 85%;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+/* header */
+header{
+    /* format */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(83, 83, 83);
+    margin-bottom: 100px;
+    margin-top: 30px;
+    /* border: 1px solid blue; */
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.header-first-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.main-title{
+    margin-bottom: 20px;
+}
+
+.header-second-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image {
+    width: 65%;
+}
+
+.main-paragraph{
+    color: grey;
+}
+
+.main-navigation-container{
+    /* format */
+    text-transform: uppercase;
+    font-weight: bold;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.main-navigation-item{
+    color: rgb(83, 83, 83);
+}
+
+/* body */
+body{
+    /* format */
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1,h2,h3{
+    color: black;
+    margin: 0px;
+}
+
+.portfolio-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.mainsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    /* border: 2px solid red; */
+
+}
+
+.mainsection-title{
+    /* format */
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.mainsection-paragraph{
+    margin-bottom: 20px;
+}
+.subsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 75%;
+}
+
+.subsection-item{
+    width: 100%;
+}
+
+.subsection-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.subsection-paragraph{
+    margin-top: 0px;
+}
+
+.contact-section{
+    width: 75%;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+.contact-subcontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.tag{
+    margin-right: 10px;
+}
+.value{
+    font-weight: bold;
+}
+
+/* footer */
+footer{
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.footer-container{
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-item{
+    /* border: 1px solid blue; */
+    font-weight: bold;
+    color: black;
+}
+
+.b2t{
+    text-transform: uppercase;
+    
+}
+
+
+@media (min-width:640px) {
+    .main-navigation-container{
+        flex-direction: row;
+        /* background-color: red; */
+        width: 50%;
+        justify-content: space-around;
+        height: 30px;
+    }
+    .header-second-container{
+        flex-direction: row-reverse;
+        width: 95%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .header-second-item{
+        width: 48%;
+    }
+    .header-image {
+        flex: 1 1 0;
+    }
+    .main-paragraph{
+        text-align: left;
+        margin: 0px;
+        margin-right: 10px;
+        flex: 2 1 0;
+    }
+    .portfolio-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .subsection{
+        width: 49%;
+    }
+    .contact-section{
+        width: 40%;
+        flex-basis: 200px;
+    }
+}
+
+@media(min-width:1024px){
+    header{
+        margin-top: 50px;
+    }
+    .header-first-container{
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 50px;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .header-first-item{
+        margin: 0px;
+    }
+    .header-second-container{
+        font-size: 25px;
+        width: 90%;
+    }
+    .subsection{
+        width: 30%;
+    }
+}
