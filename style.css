@@ -186,11 +186,13 @@ footer{
     color: black;
 }
 
-.b2t{
+.mobile-item, .tablet-item{
     text-transform: uppercase;
     
 }
-
+.tablet-footer{
+    display: none;
+}
 
 @media (min-width:640px) {
     .main-navigation-container{
@@ -232,6 +234,16 @@ footer{
     .contact-section{
         width: 40%;
         flex-basis: 200px;
+    }
+
+    .mobile-footer{
+        display: none;
+    }
+
+    .tablet-footer{
+        display: flex;
+        width:250px;
+        justify-content: space-between;
     }
 }
 
